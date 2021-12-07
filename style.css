@@ -5,6 +5,8 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
 
 header {
   width: 100%;
@@ -247,19 +249,50 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
+  height: 150px;
   background-color: #341940;
 }
 
-.box-rights {
+.contain-footer h2 {
+  font-size: 1.4em;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.box-icons {
   display: flex;
+  justify-content: space-between;
+  width: 100px;
+  padding: 10px;
+}
+
+.box-rights {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.icon-insta,
+.icon-face {
+  cursor: pointer;
+  width: 30px;
 }
 
 .box-rights p {
   font-size: 1em;
   font-family: "Open Sans Condensed", sans-serif;
+  color: #341940;
+  text-align: center;
+}
+
+.box-rights h2 {
+  font-size: 1em;
+  font-family: "Corinthia", cursive;
   color: #341940;
   text-align: center;
 }
