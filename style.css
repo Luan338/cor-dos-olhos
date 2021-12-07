@@ -116,6 +116,8 @@ header {
 .box-text-1,
 .box-text-2,
 .box-text-3 {
+  display: flex;
+  justify-content: center;
   width: 90%;
   margin: 0 auto;
 }
@@ -126,6 +128,7 @@ header {
   color: #341940;
   font-size: 1.6em;
   font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
 }
 
 .box-btn {
@@ -160,11 +163,79 @@ header {
   width: 40px;
 }
 
-/* Inicio mobile */
+.contain-map {
+  margin-top: 20%;
+  margin-bottom: 5%;
+  background-color: #341940;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
+.box-img-map {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+  left: 98px;
+  width: 28%;
+  height: 400px;
+  background-color: white;
+}
+
+.box-img-map img {
+  cursor: pointer;
+  filter: drop-shadow(rgba(151, 149, 149, 0.6) -14px 12px 1px);
+  left: 20%;
+  position: absolute;
+  width: 100%;
+}
+
+.box-text-map {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  height: 500px;
+}
+
+.box-text-map h4 {
+  width: 60%;
+  color: #341940;
+  font-size: 1.4em;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.contain-btn {
+  cursor: pointer;
+  margin-top: 10%;
+}
+
+.contain-btn button {
+  text-transform: capitalize;
+  width: 150px;
+  padding: 3%;
+  border-radius: 10px;
+  border: 2px solid #341940;
+  color: #341940;
+  font-size: 1.3em;
+  cursor: pointer;
+  font-family: "Open Sans Condensed", sans-serif;
+  transition: 1s all;
+}
+.contain-btn button:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: #341940;
+}
+
+/* Inicio mobile */
 @media (max-width: 750px) {
   .container-header {
-    height: 380px;
+    height: 220px;
   }
 
   .img-fortes {
@@ -243,5 +314,163 @@ header {
   #checkbox-menu:checked + label span:nth-child(3) {
     transform: rotate(45deg);
     top: 8px;
+  }
+
+  .contain-main {
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    bottom: 0px;
+    width: 50%;
+    height: 400px;
+    z-index: 9;
+  }
+
+  .contain-map {
+    flex-direction: column;
+    margin-top: 40%;
+  }
+
+  .box-img-map {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 300px;
+  }
+
+  .box-img-map img {
+    filter: drop-shadow(rgba(22, 22, 22, 0.6) -14px 12px 1px);
+    left: -30%;
+    position: absolute;
+    width: 80%;
+  }
+
+  .box-text-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 421px;
+  }
+
+  .box-text-map h4 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 471px) {
+  .box-text-1,
+  .box-text-2,
+  .box-text-3 {
+    width: 100%;
+  }
+
+  .box-text-1 h2,
+  .box-text-2 h2,
+  .box-text-3 h2 {
+    font-size: 1.6em;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 60%;
+    height: 350px;
+  }
+}
+
+@media (max-width: 425px) {
+  .box-img-map img {
+    width: 100%;
+    bottom: 10%;
+    left: -50%;
+  }
+}
+
+@media (max-width: 320px) {
+  .box-text-1,
+  .box-text-2,
+  .box-text-3 {
+    width: 100%;
+  }
+
+  .box-text-1 h2,
+  .box-text-2 h2,
+  .box-text-3 h2 {
+    font-size: 1.6em;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 80%;
+    height: 350px;
+  }
+}
+
+@media (max-width: 287px) {
+  .box-text-map {
+    height: 300px;
+  }
+
+  .box-text-map h4 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 240px) {
+  .contain-main {
+    height: 1000px;
+  }
+
+  .box-text-1 h2,
+  .box-text-2 h2,
+  .box-text-3 h2 {
+    font-size: 1em;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 80%;
+    height: 250px;
+  }
+
+  .box-btn button {
+    font-size: 1em;
+    padding: 3%;
+    width: 95%;
+  }
+
+  .box-text-map {
+    height: 368px;
+  }
+
+  .contain-btn {
+    width: 80%;
+  }
+
+  .contain-btn button {
+    font-size: 1em;
+    padding: 2%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 185px) {
+  .box-text-map h4 {
+    overflow-y: scroll;
+    height: 200px;
   }
 }
