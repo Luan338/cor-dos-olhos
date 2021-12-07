@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Roboto:wght@100&display=swap");
+
+header {
+  width: 100%;
+}
+
+.wrap-header,
+.wrap-main {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.container-header {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.contain-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 90%;
+  height: 100px;
+  left: 5%;
+}
+
+.navigation {
+  width: 70%;
+}
+
+.list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list li a {
+  transition: 0.6s all;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.list li a:hover {
+  color: #341940;
+  font-weight: 500;
+}
+
+.img-fortes {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  background-position: center;
+}
+
+.user {
+  cursor: pointer;
+  width: 30px;
+}
+
+.container-menu {
+  display: none;
+}
+
+.contain-main {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  top: 200px;
+  width: 100%;
+  background-color: #341940;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  bottom: 180px;
+  width: 25%;
+  height: 300px;
+  background-color: white;
+  border: 1px solid rgb(197, 196, 196);
+  box-shadow: 0px -7px 6px -3px rgb(197 196 196);
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  box-shadow: 0px -7px 6px -3px rgb(115, 250, 115);
+}
+
+.box-lupa,
+.box-som,
+.box-graphic {
+  padding-top: 10%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box-text-1,
+.box-text-2,
+.box-text-3 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box-text-1 h2,
+.box-text-2 h2,
+.box-text-3 h2 {
+  color: #341940;
+  font-size: 1.6em;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.box-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.box-btn button {
+  text-transform: capitalize;
+  width: 150px;
+  padding: 4%;
+  border-radius: 10px;
+  border: 2px solid #341940;
+  color: #341940;
+  font-size: 1.3em;
+  top: 97%;
+  cursor: pointer;
+  position: absolute;
+  font-family: "Open Sans Condensed", sans-serif;
+  transition: 1s all;
+}
+.box-btn button:hover {
+  color: white;
+  border: 1px solid white;
+  transition: 0.5s;
+  background-color: #341940;
+}
+
+.box-lupa img,
+.box-som img,
+.box-graphic img {
+  width: 40px;
+}
+
+/* Inicio mobile */
+
+@media (max-width: 750px) {
+  .container-header {
+    height: 380px;
+  }
+
+  .img-fortes {
+    object-fit: cover;
+    width: 100%;
+    height: 380px;
+    background-position: center;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .contain-header {
+    width: 95%;
+    height: 70px;
+  }
+
+  .container-menu {
+    border: none;
+    background-color: white;
+    padding: 25px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .box-menu-mobile {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  #checkbox-menu {
+    position: absolute;
+    opacity: 0;
+  }
+
+  label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 40px;
+  }
+
+  label span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background-color: #503527;
+    transition: 0.25s ease-in-out;
+  }
+
+  label span:nth-child(1) {
+    top: 0;
+  }
+
+  label span:nth-child(2) {
+    top: 8px;
+  }
+
+  label span:nth-child(3) {
+    top: 16px;
+  }
+
+  #checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+
+  #checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+}
