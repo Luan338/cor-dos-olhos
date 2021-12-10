@@ -116,13 +116,6 @@ header {
   box-shadow: 0px -7px 6px -3px rgb(197 196 196);
 }
 
-.card-1:hover,
-.card-2:hover,
-.card-3:hover {
-  box-shadow: 0px -7px 6px -3px rgb(115, 250, 115);
-  border: 1px solid rgb(115, 250, 115);
-}
-
 .box-lupa,
 .box-som,
 .box-graphic {
