@@ -491,6 +491,22 @@ footer {
 }
 
 @media (max-width: 320px) {
+  .container-menu {
+    width: 100px;
+  }
+
+  .box-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 38%;
+  }
+
+  .box-logo img {
+    width: 115px;
+  }
+
   .box-text-1,
   .box-text-2,
   .box-text-3 {
@@ -522,6 +538,30 @@ footer {
 }
 
 @media (max-width: 240px) {
+  .container-menu {
+    width: 30%;
+  }
+
+  label {
+    margin-left: 10px;
+  }
+
+  label span {
+    width: 60%;
+  }
+
+  .box-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 38%;
+  }
+
+  .box-logo img {
+    width: 115px;
+  }
+
   .contain-main {
     height: 1000px;
   }
