@@ -320,6 +320,17 @@ footer {
   text-align: center;
 }
 
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transition: 5s all;
+  transform: translate3d(0, 0, 0);
+}
+
 /* Inicio mobile */
 @media (max-width: 750px) {
   .container-header {
