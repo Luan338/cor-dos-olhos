@@ -325,6 +325,14 @@ footer {
 }
 
 /*Inicio telas maiores */
+@media (min-width: 1396px) {
+  .box-img-map {
+    left: 8%;
+    width: 28%;
+    height: 400px;
+  }
+}
+
 @media (min-width: 1500px) {
   .card-1,
   .card-2,
@@ -335,7 +343,6 @@ footer {
   }
 
   .box-img-map {
-    left: 120px;
     width: 28%;
     height: 400px;
   }
@@ -369,7 +376,6 @@ footer {
     align-items: center;
     justify-content: right;
     position: relative;
-    left: 150px;
     width: 28%;
     height: 400px;
     background-color: white;
