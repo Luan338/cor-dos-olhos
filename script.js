@@ -20,3 +20,4 @@ function animacaoScroll(){
     }
 }
 animacaoScroll();
+
