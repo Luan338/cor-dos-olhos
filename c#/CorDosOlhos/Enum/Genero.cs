@@ -13,6 +13,6 @@ namespace CorDosOlhos.Enum
 
         Outro
 
-       
+
     }
 }

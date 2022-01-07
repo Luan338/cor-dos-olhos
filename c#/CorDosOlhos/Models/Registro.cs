@@ -12,7 +12,7 @@ namespace CorDosOlhos.Models
         public string CEPRegistro { get; set; }
         public string BairroRegistro { get; set; }
         public string EnderecoRegistro { get; set; }
-        public string NumeroRegistro { get; set; }         
+        public string NumeroRegistro { get; set; }
         public string PontoRefRegistro { get; set; }
         public string DescricaoRegistro { get; set; }
 

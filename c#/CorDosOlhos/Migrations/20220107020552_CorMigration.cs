@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CorDosOlhos.Migrations
 {
-    public partial class CorMigrations : Migration
+    public partial class CorMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -54,7 +54,7 @@ CREATE TABLE [Registros] (
 GO
 
 INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
-VALUES (N'20220104013413_CorMigrations', N'5.0.13');
+VALUES (N'20220107020552_CorMigration', N'5.0.13');
 GO
 
 COMMIT;

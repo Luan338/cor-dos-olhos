@@ -24,6 +24,6 @@ namespace CorDosOlhos.Models
         public int TelefoneC { get; set; }
         public string EmailC { get; set; }
 
-        
+
     }
 }

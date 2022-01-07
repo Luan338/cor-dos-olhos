@@ -106,60 +106,60 @@
             <h2>Clientes Cadastrados</h2>
             <div class="table-responsive">
 
-                
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>IdC</th>
-                                <th>NomeC</th>
-                                <th>SobrenomeC</th>
-                                <th>NasC </th>
-                                <th>CPFC </th>
-                                <th>Etnia </th>
-                                <th>Genero </th>
-                                <th>CidadeC</th>
-                                <th>UFC</th>
-                                <th>CEPC</th>
-                                <th>BairroC</th>
-                                <th>EnderecoC</th>
-                                <th>NumeroC</th>
-                                <th>TelefoneC</th>
-                                <th>Email</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @{
-                                foreach (var cadastro in Cadastros)
-                                {
-                                    <tr>
-                                        <td>@cadastro.IdC</td>
-                                        <td>@cadastro.NomeC</td>
-                                        <td>@cadastro.SobrenomeC</td>
-                                        <td>@cadastro.NasC</td>
-                                        <td>@cadastro.CPFC</td>
-                                        <td>@cadastro.Etnia</td>
-                                        <td>@cadastro.Genero</td>
-                                        <td>@cadastro.CidadeC</td>
-                                        <td>@cadastro.UFC</td>
-                                        <td>@cadastro.CEPC</td>
-                                        <td>@cadastro.BairroC</td>
-                                        <td>@cadastro.EnderecoC</td>
-                                        <td>@cadastro.NumeroC</td>
-                                        <td>@cadastro.TelefoneC</td>
-                                        <td>@cadastro.EmailC</td>
 
-                                        <td>
-                                            <form asp-controller="Editarcadastro" asp-action="Deletar">
-                                                <button class="btn btn-danger" type="submit">Excluir</button>
-                                                <input asp-for="IdC" style="visibility:hidden;" type="text" value="@cadastro.IdC">
-                                            </form>
-                                        </td>
-                                    </tr>
-                                }
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>IdC</th>
+                            <th>NomeC</th>
+                            <th>SobrenomeC</th>
+                            <th>NasC </th>
+                            <th>CPFC </th>
+                            <th>Etnia </th>
+                            <th>Genero </th>
+                            <th>CidadeC</th>
+                            <th>UFC</th>
+                            <th>CEPC</th>
+                            <th>BairroC</th>
+                            <th>EnderecoC</th>
+                            <th>NumeroC</th>
+                            <th>TelefoneC</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (var cadastro in Cadastros)
+                            {
+                                <tr>
+                                    <td>@cadastro.IdC</td>
+                                    <td>@cadastro.NomeC</td>
+                                    <td>@cadastro.SobrenomeC</td>
+                                    <td>@cadastro.NasC</td>
+                                    <td>@cadastro.CPFC</td>
+                                    <td>@cadastro.Etnia</td>
+                                    <td>@cadastro.Genero</td>
+                                    <td>@cadastro.CidadeC</td>
+                                    <td>@cadastro.UFC</td>
+                                    <td>@cadastro.CEPC</td>
+                                    <td>@cadastro.BairroC</td>
+                                    <td>@cadastro.EnderecoC</td>
+                                    <td>@cadastro.NumeroC</td>
+                                    <td>@cadastro.TelefoneC</td>
+                                    <td>@cadastro.EmailC</td>
+
+                                    <td>
+                                        <form asp-controller="Editarcadastro" asp-action="Deletar">
+                                            <button class="btn btn-danger" type="submit">Excluir</button>
+                                            <input asp-for="IdC" style="visibility:hidden;" type="text" value="@cadastro.IdC">
+                                        </form>
+                                    </td>
+                                </tr>
                             }
-                        </tbody>
-                    </table>
-                </div>
+                        }
+                    </tbody>
+                </table>
             </div>
         </div>
+    </div>
 </div>

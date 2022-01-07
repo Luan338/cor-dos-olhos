@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CorDosOlhos.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20220104013413_CorMigrations")]
-    partial class CorMigrations
+    [Migration("20220107020552_CorMigration")]
+    partial class CorMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
