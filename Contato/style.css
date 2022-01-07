@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Corinthia:wght@400;700&family=Dancing+Script&family=IBM+Plex+Serif:wght@100&family=Luxurious+Roman&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Montserrat:wght@300;500;800&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC&family=Playfair+Display:wght@900&family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
+
+.wrap {
+  max-width: 1900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+}
+
+main {
+  padding-top: 70px;
+}
+
+.container {
+  width: 100%;
+  height: 100px;
+  background-color: #341940;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.navigation {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.navigation ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  text-transform: capitalize;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.navigation ul img {
+  width: 30px;
+}
+
+.container-main {
+  margin: 50px;
+  padding-top: 40px;
+}
+
+#contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.993);
+  padding: 40px;
+  border-radius: 2px;
+  width: 800px;
+  box-shadow: 0 9px 25px #341940, 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.card-header {
+  padding-bottom: 10px;
+  opacity: 0.8;
+  color: #341940;
+}
+
+.card-content label {
+  color: #341940;
+  font-size: 1.7em;
+  opacity: 0.8;
+}
+
+.card-content-area {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.card-content-area input {
+  margin-top: 10px;
+  padding: 0 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #341940;
+  outline: none;
+  color: #341940;
+}
+
+.card-content-area textarea {
+  margin-top: 10px;
+  padding: 0 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #341940;
+  outline: none;
+  color: #341940;
+}
+
+.card-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-btn button {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border: 3px solid #341940;
+  border-radius: 10px;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #341940;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: 1s all;
+}
+.card-btn button:hover {
+  color: white;
+  border: 1px solid white;
+  transition: 0.5s;
+  background-color: #341940;
+}
+
+.card-header h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #341940;
+}
+
+.box-contact {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.box-contact p {
+  font-size: 1.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #341940;
+}
+
+footer {
+  width: 100%;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contain-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 200px;
+  background-color: #341940;
+}
+
+.img-olho {
+  cursor: pointer;
+  width: 150px;
+  transition: 1s all;
+}
+.img-olho:hover {
+  filter: drop-shadow(rgba(47, 47, 47, 0.6) -14px 12px 1px);
+}
+
+.contain-footer h2 {
+  font-size: 1.4em;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.box-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  padding: 10px;
+}
+
+.box-rights {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-insta,
+.icon-face {
+  cursor: pointer;
+  width: 30px;
+}
+
+.box-rights p {
+  font-size: 1em;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #341940;
+  text-align: center;
+}
+
+.box-rights h2 {
+  font-size: 1em;
+  font-family: "Corinthia", cursive;
+  color: #341940;
+  text-align: center;
+}

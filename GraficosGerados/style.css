@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 1900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+}
+
+h1 {
+  color: #341940;
+  font-size: 3em;
+  text-align: center;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  width: 70%;
+  color: #341940;
+  font-size: 2em;
+}
+
+button {
+  width: 300px;
+  padding: 2%;
+  border-radius: 10px;
+  border: 2px solid #341940;
+  color: #341940;
+  font-size: 1.3em;
+  cursor: pointer;
+  font-family: "Open Sans Condensed", sans-serif;
+  transition: 1s all;
+}
+button:hover {
+  color: white;
+  border: 1px solid white;
+  transition: 0.5s;
+  background-color: #341940;
+}
+
+.img-grafico {
+  width: 50%;
+}
+
+@media (max-width: 870px) {
+  h2 {
+    overflow-y: scroll;
+    height: 200px;
+  }
+
+  .h2::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  .h2::-webkit-scrollbar-thumb {
+    background-color: #341940;
+  }
+
+  .h2::-webkit-scrollbar-track {
+    background-color: white;
+  }
+}
+
+@media (max-width: 657px) {
+  .box {
+    padding: 70px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img-grafico {
+    width: 80%;
+  }
+
+  h2 {
+    margin-top: 50px;
+    height: 400px;
+    text-align: center;
+    font-size: 1.7em;
+  }
+
+  button {
+    width: 70%;
+  }
+}
