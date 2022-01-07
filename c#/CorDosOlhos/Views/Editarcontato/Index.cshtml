@@ -1,0 +1,86 @@
+﻿@model CorDosOlhos.Models.Contato;
+@{
+    ViewData["Title"] = "Contato";
+    var Contatos = ViewData["Contatos"] as List<Contato>;
+
+}
+<h1>editar</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <h2>Clientes Cadastrados</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Mensagem</th>
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (var contato in Contatos)
+                            {
+                                <tr>
+                                    <td>@contato.IdContato</td>
+                                    <td>@contato.NomeContato</td>
+                                    <td>@contato.EmailContato</td>
+                                    <td>@contato.MsgContato</td>
+
+                                    <td>
+                                        <form asp-controller="Editarcontato" asp-action="Deletar">
+                                            <button class="btn btn-danger" type="submit">Excluir</button>
+                                            <input asp-for="IdContato" style="visibility:hidden;" type="text" value="@contato.IdContato">
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <hr />
+
+            <br />
+            <hr />
+            <br />
+            <h2>Atualizar Dados</h2>
+            <form asp-controller="Editarcontato" asp-action="Atualizar">
+
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="">Código do cliente</label>
+                        <select class="custom-select" asp-for="IdContato">
+                            <option selected>-- Selecione um código</option>
+                            @{
+                                foreach (var contato in Contatos)
+                                {
+                                    <option>@contato.IdContato</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="">Nome completo</label>
+                        <input asp-for="NomeContato" type="text" class="form-control" id="" placeholder="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="">E-mail</label>
+                        <input asp-for="EmailContato" type="text" class="form-control" id="" placeholder="exemplo@gmail.com">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="">Mensagem</label>
+                        <textarea asp-for="MsgContato" type="date" class="form-control" id=""></textarea>
+                    </div>
+
+                </div>
+                <button type="submit" class="btn btn-primary">Atualizar</button>
+            </form>
+        </div>
+    </div>
+</div>

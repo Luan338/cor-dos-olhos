@@ -1,0 +1,146 @@
+﻿@model CorDosOlhos.Models.Cadastro;
+@{
+
+    ViewData["Title"] = "Cadastro";
+    var Cadastros = ViewData["Cadastros"] as List<Cadastro>;
+
+
+
+
+}
+
+<h1>Cadastrar user</h1>
+
+<form asp-action="Index">
+    <div class="shadow-lg  p-3 mb-5 bg-white rounded mx-auto" style=" margin-top: 10%; color: #000; ">
+        <!--msm nome public IActionResult Incluir(Clie-->
+        <div class="form-row">
+
+            <div class="form-group col-md-6">
+                <label for"">Nome</label>
+                <input asp-for="NomeC" type="text" class="form-control" id="" placeholder="Larissa">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for"">Sobrenome</label>
+                <input asp-for="SobrenomeC" type="text" class="form-control" id="">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for"">Data nascimento</label>
+
+                <input asp-for="NasC" type="date" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">CPF</label>
+                <input asp-for="CPFC" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="">Etnia</label>
+                <select class="custom-select" asp-for="Etnia">
+                    <option selected>-- Selecione uma opção</option>
+                    <option>Branco</option>
+                    <option>Preto</option>
+                    <option>Pardo</option>
+                    <option>Amarelo</option>
+                    <option>Indígena</option>
+
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="">Genero</label>
+                <select class="custom-select" asp-for="Genero">
+                    <option selected>-- Selecione uma opção</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Outro</option>
+
+
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">Cidade</label>
+                <input asp-for="CidadeC" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">UF</label>
+                <input asp-for="UFC" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">CEP</label>
+                <input asp-for="CEPC" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">Bairro</label>
+                <input asp-for="BairroC" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">Endereco</label>
+                <input asp-for="EnderecoC" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">Número</label>
+                <input asp-for="NumeroC" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">Telefone</label>
+                <input asp-for="TelefoneC" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">E-mail</label>
+                <input asp-for="EmailC" type="email" class="form-control" id="" placeholder="exemplo@gmail.com">
+            </div>
+            <div class="">
+                <button type="submit" class="btn btn-outline-dark">Enviar</button>
+                <a asp-controller="Editarcadastro" asp-action="Index"><input type="button" class="btn btn-outline-dark" value="Editar"></a>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!--teste-->
+<div class="container">
+    <div id="contato">
+        <form class="card">
+
+            <div class="card-header">
+
+                <h2>Entre em contato</h2>
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-content-area">
+
+                    <label for="nome">Nome</label>
+
+                    <input type="text" id="nome" autocomplete="off">
+
+                </div>
+
+                <div class="card-content-area">
+
+                    <label for="email">E-mail</label>
+
+                    <input type="email" id="email" autocomplete="off">
+
+                </div>
+
+                <div class="card-content-area">
+                    <label for="mensagemContato">Mensagem</label>
+                    <textarea class="form-control" id="mensagemContato" rows="1"></textarea>
+
+                </div>
+            </div>
+
+            <div class="card-footer">
+
+                <input type="submit" value="Enviar" class="submit">
+
+
+            </div>
+
+        </form>
+    </div>
+</div>

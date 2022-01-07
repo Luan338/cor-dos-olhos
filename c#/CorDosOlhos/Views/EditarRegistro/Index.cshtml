@@ -1,0 +1,117 @@
+﻿@model CorDosOlhos.Models.Registro;
+
+@{
+    ViewData["Title"] = "Registro";
+    var Registros = ViewData["Registros"] as List<Registro>;
+}
+
+<h1>Editar Registro de ocorrencias</h1>
+
+
+
+<!--crud-->
+
+<h1>editar</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <h2>Clientes Cadastrados</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>IdRegistro</th>
+                            <th>CidadeRegistro</th>
+                            <th>CEPRegistro</th>
+                            <th>BairroRegistro </th>
+                            <th>EnderecoRegistro </th>
+                            <th>NumeroRegistro </th>
+                            <th>PontoRefRegistro </th>
+                            <th>DescricaoRegistro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (var registro in Registros)
+                            {
+                                <tr>
+                                    <td>@registro.IdRegistro</td>
+                                    <td>@registro.CidadeRegistro</td>
+                                    <td>@registro.CEPRegistro</td>
+                                    <td>@registro.BairroRegistro</td>
+                                    <td>@registro.EnderecoRegistro</td>
+                                    <td>@registro.NumeroRegistro</td>
+                                    <td>@registro.PontoRefRegistro</td>
+                                    <td>@registro.DescricaoRegistro</td>
+
+                                    <td>
+                                        <form asp-controller="registro" asp-action="Deletar">
+                                            <button class="btn btn-danger" type="submit">Excluir</button>
+                                            <input asp-for="IdRegistro" style="visibility:hidden;" type="text" value="@registro.IdRegistro">
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+            <hr />
+
+            <br />
+            <hr />
+            <br />
+            <h2>Atualizar Dados</h2>
+            <form asp-controller="Registro" asp-action="Atualizar">
+
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="">Código do cliente</label>
+                        <select class="custom-select" asp-for="IdRegistro">
+                            <option selected>-- Selecione um código</option>
+                            @{
+                                foreach (var registro in Registros)
+                                {
+                                    <option>@registro.IdRegistro</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="">Cidade</label>
+                        <input asp-for="CidadeRegistro" type="text" class="form-control" id="" placeholder="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="">CEP</label>
+                        <input asp-for="CEPRegistro" type="text" class="form-control" id="" placeholder="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="">Bairro</label>
+                        <input asp-for="BairroRegistro" type="text" class="form-control" id="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="">Endereço</label>
+                        <input asp-for="EnderecoRegistro" type="text" class="form-control" id="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="">Número</label>
+                        <input asp-for="NumeroRegistro" type="text" class="form-control" id="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="">Ponto Referencia</label>
+                        <input asp-for="PontoRefRegistro" type="text" class="form-control" id="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="">DescricaoRegistro</label>
+                        <textarea asp-for="DescricaoRegistro" type="text" class="form-control" id=""></textarea>
+                    </div>
+
+                </div>
+                <button type="submit" class="btn btn-primary">Atualizar</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--fim crud-->

@@ -1,0 +1,165 @@
+﻿@model CorDosOlhos.Models.Cadastro;
+@{
+
+    ViewData["Title"] = "Cadastro";
+    var Cadastros = ViewData["Cadastros"] as List<Cadastro>;
+
+
+
+
+}
+<h2>Atualizar Dados</h2>
+<!--<div class="table-responsive">
+
+    <table class="table table-striped">-->
+<form asp-controller="Editarcadastro" asp-action="Atualizar">
+
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="">Código do cliente</label>
+            <select class="custom-select" asp-for="IdC">
+                <option selected>-- Selecione um código</option>
+                @{
+                    foreach (var cadastro in Cadastros)
+                    {
+                        <option>@cadastro.IdC</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="">Nome</label>
+            <input asp-for="NomeC" type="text" class="form-control" id="" placeholder="Mark Zuck">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">Sobrenome</label>
+            <input asp-for="SobrenomeC" type="text" class="form-control" id="" placeholder="00000000000000">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">Nascimento</label>
+            <input asp-for="NasC" type="date" class="form-control" id="">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">CPF</label>
+            <input asp-for="CPFC" type="text" class="form-control" id="" placeholder="00000000000000">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">Situação</label>
+            <select class="custom-select" asp-for="Etnia">
+                <option selected>-- Selecione uma opção</option>
+                <option>Branco</option>
+                <option>Preto</option>
+                <option>Pardo</option>
+                <option>Amarelo</option>
+                <option>Indígena</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">Situação</label>
+            <select class="custom-select" asp-for="Genero">
+                <option selected>-- Selecione uma opção</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+                <option>Outro</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">Cidade</label>
+            <input asp-for="CidadeC" type="text" class="form-control" id="" placeholder="Rio de Janeiro">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">UF</label>
+            <input asp-for="UFC" type="text" class="form-control" id="">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">CEP</label>
+            <input asp-for="CEPC" type="text" class="form-control" id="">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">Bairro</label>
+            <input asp-for="BairroC" type="text" class="form-control" id="">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">Endereco</label>
+            <input asp-for="EnderecoC" type="text" class="form-control" id="">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">Número</label>
+            <input asp-for="NumeroC" type="text" class="form-control" id="">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">Telefone</label>
+            <input asp-for="TelefoneC" type="text" class="form-control" id="">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="">E-mail</label>
+            <input asp-for="EmailC" type="text" class="form-control" id="">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Atualizar</button>
+</form>
+
+<h1>editar</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <h2>Clientes Cadastrados</h2>
+            <div class="table-responsive">
+
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>IdC</th>
+                            <th>NomeC</th>
+                            <th>SobrenomeC</th>
+                            <th>NasC </th>
+                            <th>CPFC </th>
+                            <th>Etnia </th>
+                            <th>Genero </th>
+                            <th>CidadeC</th>
+                            <th>UFC</th>
+                            <th>CEPC</th>
+                            <th>BairroC</th>
+                            <th>EnderecoC</th>
+                            <th>NumeroC</th>
+                            <th>TelefoneC</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (var cadastro in Cadastros)
+                            {
+                                <tr>
+                                    <td>@cadastro.IdC</td>
+                                    <td>@cadastro.NomeC</td>
+                                    <td>@cadastro.SobrenomeC</td>
+                                    <td>@cadastro.NasC</td>
+                                    <td>@cadastro.CPFC</td>
+                                    <td>@cadastro.Etnia</td>
+                                    <td>@cadastro.Genero</td>
+                                    <td>@cadastro.CidadeC</td>
+                                    <td>@cadastro.UFC</td>
+                                    <td>@cadastro.CEPC</td>
+                                    <td>@cadastro.BairroC</td>
+                                    <td>@cadastro.EnderecoC</td>
+                                    <td>@cadastro.NumeroC</td>
+                                    <td>@cadastro.TelefoneC</td>
+                                    <td>@cadastro.EmailC</td>
+
+                                    <td>
+                                        <form asp-controller="Editarcadastro" asp-action="Deletar">
+                                            <button class="btn btn-danger" type="submit">Excluir</button>
+                                            <input asp-for="IdC" style="visibility:hidden;" type="text" value="@cadastro.IdC">
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

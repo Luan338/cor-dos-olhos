@@ -1,0 +1,50 @@
+﻿@model CorDosOlhos.Models.Registro;
+
+@{
+    ViewData["Title"] = "Registro";
+    var Registros = ViewData["Registros"] as List<Registro>;
+}
+<h1>Consultar Ocorridos</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>IdRegistro</th>
+                        <th>CidadeRegistro</th>
+                        <th>CEPRegistro</th>
+                        <th>BairroRegistro</th>
+                        <th>EnderecoRegistro</th>
+                        <th>NumeroRegistro</th>
+                        <th>PontoRefRegistro</th>
+                        <th>DescricaoRegistro</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        foreach (var registro in Registros)
+                        {
+                            <tr>
+                                <td>@registro.IdRegistro</td>
+                                <td>@registro.CidadeRegistro</td>
+                                <td>@registro.CEPRegistro</td>
+                                <td>@registro.BairroRegistro</td>
+                                <td>@registro.EnderecoRegistro</td>
+                                <td>@registro.NumeroRegistro</td>
+                                <td>@registro.PontoRefRegistro</td>
+                                <td>@registro.DescricaoRegistro</td>
+
+                                
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,57 @@
+﻿@model CorDosOlhos.Models.Registro;
+
+@{
+    ViewData["Title"] = "Registro";
+    var Registros = ViewData["Registros"] as List<Registro>;
+}
+
+<h1>Registro de ocorrencias</h1>
+
+<form asp-action="Index">
+    <div class="shadow-lg  p-3 mb-5 bg-white rounded mx-auto" style=" margin-top: 10%; color: #000; ">
+        <!--msm nome public IActionResult Incluir(Clie-->
+        <div class="form-row">
+
+            <div class="form-group col-md-6">
+                <label for"">Cidade</label>
+                <input asp-for="CidadeRegistro" type="text" class="form-control" id="" placeholder="Rio de Janeiro">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for"">CEP</label>
+                <input asp-for="CEPRegistro" type="text" class="form-control" id="">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for"">Bairro</label>
+
+                <input asp-for="BairroRegistro" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">Digite o endereço que ocorreu o ato de racismo</label>
+
+                <input asp-for="EnderecoRegistro" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">Número</label>
+
+                <input asp-for="NumeroRegistro" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">Ponto de referência</label>
+
+                <input asp-for="PontoRefRegistro" type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for"">Descreva o ocorrido(física, verbal)</label>
+
+                <textarea asp-for="DescricaoRegistro" type="text" class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <div class="">
+                <button type="submit" class="btn btn-outline-dark">Enviar</button>
+                <a asp-controller="Editarregistro" asp-action="Index"><input type="button" class="btn btn-outline-dark" value="Editar"></a>
+            </div>
+        </div>
+    </div>
+</form>
+
