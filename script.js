@@ -1,6 +1,6 @@
 function animacaoScroll(){
     const sections = document.querySelectorAll('.js-scroll');
-
+    
     if(sections.length){
         const windowMetade = window.innerHeight * 0.7;
 
@@ -20,4 +20,3 @@ function animacaoScroll(){
     }
 }
 animacaoScroll();
-
