@@ -99,6 +99,7 @@ main {
   color: #341940;
   font-size: 1.7em;
   opacity: 0.8;
+  width: 200px;
 }
 
 .card-content-area {
@@ -346,5 +347,19 @@ footer {
 
   .box-contact {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 280px) {
+  .card {
+    width: 100%;
+  }
+  .container-main {
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  .box-contact {
+    padding-bottom: 48px;
   }
 }
