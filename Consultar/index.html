@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Consultar</title>
 </head>
 <body>
     <header>
@@ -16,10 +16,10 @@
                 <nav class="navigation nav">
                     <ul class="list">
                         <li><a href="../index.html">home</a></li>
-                        <li><a href="#">contato</a></li>
+                        <li><a href="../Contato/index.html">contato</a></li>
                         <li><a href="../Sobre/index.html">sobre</a></li>
                         <li><a href="../Registrar/index.html">registrar</a></li>
-                        <li><a href="../Consultar/index.html">consultar</a></li>
+                        <li><a href="#">consultar</a></li>
                         <li><img class="img-user" src="../img/user_(1).png" alt="user"></li>
                     </ul>
                 </nav>
@@ -42,30 +42,34 @@
                 <div id="contato"> 
                     <form class="card">
                         <div class="card-header">
-                            <h2>Entre em contato</h2>
+                            <h2>Verifique a região que deseja saber mais informações</h2>
                         </div>
                         <div class="card-content">
                             <div class="card-content-area">
-                                <label for="nome">Nome</label>
-                                <input type="text" id="nome" autocomplete="off">
+                                <label for="endereco">Endereço</label>
+                                <input type="text" id="endereco" autocomplete="off">
                             </div>
                             <div class="card-content-area">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" autocomplete="off" required>
+                                <label for="number">Número</label>
+                                <input type="number" id="number" autocomplete="off">
                             </div>
                             <div class="card-content-area">
-                                <label for="mensagemContato" >Mensagem</label>
-                                <textarea class="form-control" id="mensagemContato" rows="1"></textarea>
+                                <label for="cep" >Cep</label>
+                                <input type="number" class="form-control" id="cep" rows="1" required></input>
+                            </div>
+                            <div class="card-content-area">
+                                <label for="bairro" >Bairro</label>
+                                <input type="text" class="form-control" id="bairro" rows="1"></input>
+                            </div>
+                            <div class="card-content-area">
+                                <label for="cidade" >Cidade</label>
+                                <input type="text" class="form-control" id="cidade" rows="1"></input>
                             </div>
                         </div>
                         <div class="card-btn">
-                            <button>Enviar</button>
+                            <button>Buscar</button>
                         </div>
                     </form>
-                </div>
-                <div class="box-contact">
-                    <img src="../img/outline_mark_as_unread_black_24dp.png" alt="mensagem">
-                    <p>cordosolhos@gmail.com</p>
                 </div>
             </div>
         </section>
