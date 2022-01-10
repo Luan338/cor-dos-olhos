@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
+    <!--
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -20,6 +21,9 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Cadastro" asp-action="Index">Cadastro</a>
@@ -38,15 +42,54 @@
             </div>
         </nav>
     </header>
+        -->
+    <!--topo site -->
+    <header>
+        <section class="wrap">
+            <section class="topo">
+                <img src="../img/logoNomeBranco.png" alt="logo-white">
+                <nav class="navigation nav">
+                    <ul class="list">
+                        <li><a asp-controller="Home" asp-action="Index">home</a></li>
+                        <li><a asp-controller="Contato" asp-action="Index">contato</a></li>
+                        <li><a asp-controller="Home" asp-action="Sobre">sobre</a></li>
+                        <li><a asp-controller="Registro" asp-action="Index">registrar</a></li>
+                        <li><a asp-controller="Consultar" asp-action="Consultar">consultar</a></li>
+                        <li><a asp-controller="Cadastro" asp-action="Index"><img class="img-user" src="../img/user_(1).png" alt="user"></a></li>
+                    </ul>
+                </nav>
+                <div class="topo-menu">
+                    <div class="box-menu-mobile">
+                        <input type="checkbox" id="checkbox-menu">
+                        <label for="checkbox-menu" id="btn-mobile">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </header>
+    <!--fim topo site-->
+
+
+
+
+
+
+
+
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - CorDosOlhos - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top footer text-<div class="container">
+        &copy; 2022 - CorDosOlhos - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

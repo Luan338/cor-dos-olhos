@@ -13,37 +13,37 @@
         <div class="form-row">
 
             <div class="form-group col-md-6">
-                <label for"">Cidade</label>
+                <label class="titulo-form" for"">Cidade</label>
                 <input asp-for="CidadeRegistro" type="text" class="form-control" id="" placeholder="Rio de Janeiro">
             </div>
 
             <div class="form-group col-md-6">
-                <label for"">CEP</label>
+                <label class="titulo-form" for"">CEP</label>
                 <input asp-for="CEPRegistro" type="text" class="form-control" id="">
             </div>
 
             <div class="form-group col-md-6">
-                <label for"">Bairro</label>
+                <label class="titulo-form" for"">Bairro</label>
 
                 <input asp-for="BairroRegistro" type="text" class="form-control" id="">
             </div>
             <div class="form-group col-md-6">
-                <label for"">Digite o endereço que ocorreu o ato de racismo</label>
+                <label class="titulo-form" for"">Digite o endereço que ocorreu o ato de racismo</label>
 
                 <input asp-for="EnderecoRegistro" type="text" class="form-control" id="">
             </div>
             <div class="form-group col-md-6">
-                <label for"">Número</label>
+                <label class="titulo-form" for"">Número</label>
 
                 <input asp-for="NumeroRegistro" type="text" class="form-control" id="">
             </div>
             <div class="form-group col-md-6">
-                <label for"">Ponto de referência</label>
+                <label class="titulo-form" for"">Ponto de referência</label>
 
                 <input asp-for="PontoRefRegistro" type="text" class="form-control" id="">
             </div>
             <div class="form-group col-md-6">
-                <label for"">Descreva o ocorrido(física, verbal)</label>
+                <label class="titulo-form" for"">Descreva o ocorrido(física, verbal)</label>
 
                 <textarea asp-for="DescricaoRegistro" type="text" class="form-control" rows="5" id="comment"></textarea>
             </div>
@@ -55,3 +55,68 @@
     </div>
 </form>
 
+
+<div class="box-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14706.22690269513!2d-43.24328165!3d-22.85588385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1641693070235!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+
+<main>
+    <section class="wrap">
+        <div class="container-main">
+            <div class="contain-map">
+                <div class="box-record">
+                    <h2>Registre o ato de racismo!</h2>
+                </div>
+                <div class="box-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14706.22690269513!2d-43.24328165!3d-22.85588385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1641693070235!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div id="contato">
+                <form class="card" asp-action="Index">
+                    <div class="card-header">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content-area">
+                            <label class="titulo-form" for"">Digite o endereço que ocorreu o ato de racismo</label>
+
+                            <input asp-for="EnderecoRegistro" type="text" class="form-control" id="">
+                        </div>
+                        <div class="card-content-area">
+                            <label class="titulo-form" for"">Número</label>
+
+                            <input asp-for="NumeroRegistro" type="text" class="form-control" id="">
+                        </div>
+                        <div class="card-content-area">
+                            <label class="titulo-form" for"">CEP</label>
+                            <input asp-for="CEPRegistro" type="text" class="form-control" id="">
+                        </div>
+                        <div class="card-content-area">
+                            <label class="titulo-form" class="titulo-form" for"">Bairro</label>
+
+                            <input asp-for="BairroRegistro" type="text" class="form-control" id="">
+                        </div>
+                        <div class="card-content-area">
+                            <label class="titulo-form" for"">Cidade</label>
+                            <input asp-for="CidadeRegistro" type="text" class="form-control" id="" placeholder="Rio de Janeiro">
+                        </div>
+                        <div class="card-content-area">
+                            <label class="titulo-form" for"">Ponto de referência</label>
+
+                            <input asp-for="PontoRefRegistro" type="text" class="form-control" id="">
+                        </div>
+                        <div class="card-content-area">
+                            <label class="titulo-form" for"">Descreva o ocorrido(física, verbal)</label>
+
+                            <textarea asp-for="DescricaoRegistro" type="text" class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="card-btn">
+                        <button type="submit" class="btn btn-outline-dark">Enviar</button>
+                        <a asp-controller="Editarregistro" asp-action="Index"><button type="button" class="btn btn-outline-dark"  >Editar</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
