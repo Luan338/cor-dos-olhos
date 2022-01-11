@@ -12,9 +12,12 @@
                 <div class="box-text-1">
                     <h2>Cosulte dados do local que deseja especificar</h2>
                 </div>
-                <div class="box-btn">
-                    <button id="consultar">consultar</button>
-                </div>
+                <a asp-controller="Consultar" asp-action="Consultar">
+                    <div class="box-btn">
+                        <button id="consultar">consultar</button>
+                    </div>
+                </a>
+                
             </div>
             <div class="card-2">
                 <div class="box-som">
@@ -23,9 +26,12 @@
                 <div class="box-text-2">
                     <h2>Registre sua ocorrência</h2>
                 </div>
-                <div class="box-btn">
-                    <button id="registrar">registrar</button>
-                </div>
+                <a asp-controller="Registro" asp-action="Index">
+                    <div class="box-btn">
+                        <button id="registrar">registrar</button>
+                    </div>
+                </a>
+                
             </div>
             <div class="card-3">
                 <div class="box-graphic">
@@ -34,9 +40,12 @@
                 <div class="box-text-3">
                     <h2>Gráficos gerados</h2>
                 </div>
-                <div class="box-btn">
-                    <button id="verificar">verificar</button>
-                </div>
+                <a asp-controller="Home" asp-action="Graficos">
+                    <div class="box-btn">
+                        <button id="verificar">verificar</button>
+                    </div>
+                </a>
+                
             </div>
         </div>
         <section class="contain-map">
@@ -49,7 +58,7 @@
                     Explore, reflita, se cuide e nos ajude!
                 </h4>
                 <div class="contain-btn">
-                    <button id="saibaMais">Saiba mais</button>
+                    <button id=" ">Saiba mais</button>
                 </div>
             </div>
         </section>

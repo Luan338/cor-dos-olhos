@@ -15649,6 +15649,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Larissa\\Documents\\cor dos olhos\\cor-dos-olhos\\c#\\CorDosOlhos\\Views\\Home\\Graficos.cshtml",
+      "TargetPath": "Views\\Home\\Graficos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Larissa\\Documents\\cor dos olhos\\cor-dos-olhos\\c#\\CorDosOlhos\\Views\\EditarRegistro\\Index.cshtml",
       "TargetPath": "Views\\EditarRegistro\\Index.cshtml",
       "FileKind": "mvc"

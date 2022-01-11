@@ -14,8 +14,12 @@
     <table class="table table-striped">-->
 <div class="container-main">
     <div id="contato">
-        <form  asp-controller="Editarcadastro" asp-action="Atualizar">
-            <h2>Atualizar Dados</h2>
+        <form asp-controller="Editarcadastro" asp-action="Atualizar">
+            <br />
+            <br />
+            <h2 style="color: #341940 ">Atualizar Dados</h2>
+            <br />
+            <br />
             <div class="card-content">
                 <div class="form-row">
                     <div class="card-content-area form-group col-md-3">
@@ -32,11 +36,11 @@
                     </div>
                     <div class="card-content-area form-group col-md-6">
                         <label class="titulo-form" for="">Nome</label>
-                        <input asp-for="NomeC" type="text" class="form-control" id="" >
+                        <input asp-for="NomeC" type="text" class="form-control" id="">
                     </div>
                     <div class="card-content-area form-group col-md-3">
                         <label class="titulo-form" for="">Sobrenome</label>
-                        <input asp-for="SobrenomeC" type="text" class="form-control" id="" >
+                        <input asp-for="SobrenomeC" type="text" class="form-control" id="">
                     </div>
                     <div class="card-content-area form-group col-md-3">
                         <label class="titulo-form" for="">Nascimento</label>
@@ -99,16 +103,18 @@
                         <input asp-for="EmailC" type="text" class="form-control" id="">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Atualizar</button>
+                <div class="card-btn">
+                    <button type="submit" class="btn btn-primary">Atualizar</button>
                 </div>
+            </div>
         </form>
       </div>
     </div>
-        <h1>editar</h1>
+      
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
-                    <h2>Clientes Cadastrados</h2>
+                    <h2 style="color: #341940 ">Clientes Cadastrados</h2>
                     <div class="table-responsive">
 
 

@@ -4,47 +4,77 @@
     ViewData["Title"] = "Registro";
     var Registros = ViewData["Registros"] as List<Registro>;
 }
-<h1>Consultar Ocorridos</h1>
+<div class="card-content">
+    <!--futuramente introduzir a forma de pesquisa pelo usuarios atraves da digitação do mesmo //-->
+    <br />
+    <br />
+    <h1>Verifique a região que deseja saber mais informações</h1>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-10">
 
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>IdRegistro</th>
-                        <th>CidadeRegistro</th>
-                        <th>CEPRegistro</th>
-                        <th>BairroRegistro</th>
-                        <th>EnderecoRegistro</th>
-                        <th>NumeroRegistro</th>
-                        <th>PontoRefRegistro</th>
-                        <th>DescricaoRegistro</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @{
-                        foreach (var registro in Registros)
-                        {
-                            <tr>
-                                <td>@registro.IdRegistro</td>
-                                <td>@registro.CidadeRegistro</td>
-                                <td>@registro.CEPRegistro</td>
-                                <td>@registro.BairroRegistro</td>
-                                <td>@registro.EnderecoRegistro</td>
-                                <td>@registro.NumeroRegistro</td>
-                                <td>@registro.PontoRefRegistro</td>
-                                <td>@registro.DescricaoRegistro</td>
+    <br />
+    <br />
 
-                                
-                            </tr>
-                        }
-                    }
-                </tbody>
-            </table>
-        </div>
+    <div class="card-content-area">
+        <label class="titulo-form" for"">Digite o endereço: </label>
+        <input class="form-control" id="">
+    </div>
+
+    <div class="card-btn">
+        <button type="submit" class="btn btn-outline-dark">Procurar</button>
     </div>
 </div>
+
+         <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <br />
+                    <br />
+                    <h2 style="color: #341940 ">Registros</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+
+                                    <th>CidadeRegistro</th>
+                                    <th>CEPRegistro</th>
+                                    <th>BairroRegistro </th>
+                                    <th>EnderecoRegistro </th>
+                                    <th>NumeroRegistro </th>
+                                    <th>PontoRefRegistro </th>
+                                    <th>DescricaoRegistro</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (var registro in Registros)
+                                    {
+                                        <tr>
+
+                                            <td>@registro.CidadeRegistro</td>
+                                            <td>@registro.CEPRegistro</td>
+                                            <td>@registro.BairroRegistro</td>
+                                            <td>@registro.EnderecoRegistro</td>
+                                            <td>@registro.NumeroRegistro</td>
+                                            <td>@registro.PontoRefRegistro</td>
+                                            <td>@registro.DescricaoRegistro</td>
+
+
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+
+                    <br />
+
+                    <br />
+
+
+                </div>
+            </div>
+        </div>
 
