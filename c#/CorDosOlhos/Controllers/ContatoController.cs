@@ -26,7 +26,7 @@ namespace CorDosOlhos.Controllers
         {
             var dbcontext = new Contexto();
             dbcontext.Add(contato);
-            dbcontext.SaveChanges();
+             dbcontext.SaveChanges();
 
             return RedirectToAction("Index");
         }

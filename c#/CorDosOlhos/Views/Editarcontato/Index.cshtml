@@ -4,11 +4,15 @@
     var Contatos = ViewData["Contatos"] as List<Contato>;
 
 }
-<h1>editar</h1>
+
 <div class="container">
     <div class="row">
         <div class="col-md-10">
-            <h2>Clientes Cadastrados</h2>
+            <br/>
+            <br/>
+            <h2 style="color: #341940 ">Contatos Cadastrados</h2>
+            <br/>
+            <br/>
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
@@ -49,38 +53,47 @@
             <br />
             <hr />
             <br />
-            <h2>Atualizar Dados</h2>
-            <form asp-controller="Editarcontato" asp-action="Atualizar">
+            <h2 style="color:#341940">Atualizar Dados</h2>
+            <div class="container-main">
+                <div id="contato">
 
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="">Código do cliente</label>
-                        <select class="custom-select" asp-for="IdContato">
-                            <option selected>-- Selecione um código</option>
-                            @{
-                                foreach (var contato in Contatos)
-                                {
-                                    <option>@contato.IdContato</option>
-                                }
-                            }
-                        </select>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="">Nome completo</label>
-                        <input asp-for="NomeContato" type="text" class="form-control" id="" placeholder="">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="">E-mail</label>
-                        <input asp-for="EmailContato" type="text" class="form-control" id="" placeholder="exemplo@gmail.com">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="">Mensagem</label>
-                        <textarea asp-for="MsgContato" type="date" class="form-control" id=""></textarea>
-                    </div>
+                    <form asp-controller="Editarcontato" asp-action="Atualizar">
+                        <div class="card-content">
+                            <div class="form-row">
+                                <div class="card-content-area form-group col-md-3">
+                                    <label class="titulo-form" for="">Código do cliente</label>
+                                    <select class="custom-select" asp-for="IdContato">
+                                        <option selected>Selecione um código</option>
+                                        @{
+                                            foreach (var contato in Contatos)
+                                            {
+                                                <option>@contato.IdContato</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                                <div class="card-content-area form-group col-md-6">
+                                    <label class="titulo-form" for="">Nome completo</label>
+                                    <input asp-for="NomeContato" type="text" class="form-control" id="" placeholder="">
+                                </div>
+                                <div class="card-content-area form-group col-md-3">
+                                    <label class="titulo-form" for="">E-mail</label>
+                                    <input asp-for="EmailContato" type="text" class="form-control" id="" placeholder="exemplo@gmail.com">
+                                </div>
+                                <div class="card-content-area form-group col-md-3">
+                                    <label class="titulo-form" for="">Mensagem</label>
+                                    <textarea asp-for="MsgContato" type="date" class="form-control" id=""></textarea>
+                                </div>
 
+                            </div>
+                         </div> 
+                        <div class="card-btn">
+                            <button type="submit" class="btn btn-primary">Atualizar</button>
+                        </div>
+                        
+                    </form>
                 </div>
-                <button type="submit" class="btn btn-primary">Atualizar</button>
-            </form>
+            </div>
         </div>
     </div>
 </div>

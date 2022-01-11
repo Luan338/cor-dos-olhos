@@ -1,8 +1,66 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<img class="img-fortes" src="~/img/fortes.jpg" alt="fortes">
+<main class="container-fluid">
+    <section class="wrap-main">
+        <div class="contain-main">
+            <div class="card-1">
+                <div class="box-lupa">
+                    <img src="~/img/lupa.png" alt="lupa">
+                </div>
+                <div class="box-text-1">
+                    <h2>Cosulte dados do local que deseja especificar</h2>
+                </div>
+                <a asp-controller="Consultar" asp-action="Consultar">
+                    <div class="box-btn">
+                        <button id="consultar">consultar</button>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="card-2">
+                <div class="box-som">
+                    <img src="~/img/som.png" alt="som">
+                </div>
+                <div class="box-text-2">
+                    <h2>Registre sua ocorrência</h2>
+                </div>
+                <a asp-controller="Registro" asp-action="Index">
+                    <div class="box-btn">
+                        <button id="registrar">registrar</button>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="card-3">
+                <div class="box-graphic">
+                    <img src="~/img/grafico-de-barras.png" alt="grafico-de-barras">
+                </div>
+                <div class="box-text-3">
+                    <h2>Gráficos gerados</h2>
+                </div>
+                <a asp-controller="Home" asp-action="Graficos">
+                    <div class="box-btn">
+                        <button id="verificar">verificar</button>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        <section class="contain-map">
+            <div class="box-img-map">
+                <img src="~/img/mapa.png" alt="mapa" title="Nosso mapa">
+            </div>
+            <div class="box-text-map">
+                <h4>
+                    Aqui, poderemos interagir com as informações coletadas por diversos colaboradores que pretendem manter a integridade de cada brasileiro, independente da raça ou etnia.
+                    Explore, reflita, se cuide e nos ajude!
+                </h4>
+                <div class="contain-btn">
+                    <button id=" ">Saiba mais</button>
+                </div>
+            </div>
+        </section>
+    </section>
+</main>

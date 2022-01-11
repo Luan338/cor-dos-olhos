@@ -60,7 +60,6 @@ C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Editarcontato\Index.cshtml.g.cs
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Editarregistro\Index.cshtml.g.cs
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -76,3 +75,5 @@ C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\CorDosOlhos.genruntimeconfig.cache
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Consultar\Consultar.cshtml.g.cs
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Registro\Index.cshtml.g.cs
+C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Home\Sobre.cshtml.g.cs
+C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Home\Graficos.cshtml.g.cs

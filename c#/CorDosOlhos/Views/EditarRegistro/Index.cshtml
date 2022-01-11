@@ -5,17 +5,19 @@
     var Registros = ViewData["Registros"] as List<Registro>;
 }
 
-<h1>Editar Registro de ocorrencias</h1>
+
 
 
 
 <!--crud-->
 
-<h1>editar</h1>
+
 <div class="container">
     <div class="row">
         <div class="col-md-10">
-            <h2>Clientes Cadastrados</h2>
+            <br/>
+            <br/>
+            <h2 style="color: #341940 ">Registros</h2>
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
@@ -45,7 +47,7 @@
                                     <td>@registro.DescricaoRegistro</td>
 
                                     <td>
-                                        <form asp-controller="registro" asp-action="Deletar">
+                                        <form asp-controller="Editarregistro" asp-action="Deletar">
                                             <button class="btn btn-danger" type="submit">Excluir</button>
                                             <input asp-for="IdRegistro" style="visibility:hidden;" type="text" value="@registro.IdRegistro">
                                         </form>
@@ -58,19 +60,19 @@
             </div>
 
 
-            <hr />
+            
 
             <br />
-            <hr />
+            
             <br />
-            <h2>Atualizar Dados</h2>
-            <form asp-controller="Registro" asp-action="Atualizar">
+            <h2 style="color: #341940 "  >Atualizar Dados</h2>
+            <form asp-controller="Editarregistro" asp-action="Atualizar">
 
                 <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="">Código do cliente</label>
+                    <div class="card-content-area form-group col-md-3">
+                        <label class="titulo-form" for="">Código do cliente</label>
                         <select class="custom-select" asp-for="IdRegistro">
-                            <option selected>-- Selecione um código</option>
+                            <option selected>Selecione um código</option>
                             @{
                                 foreach (var registro in Registros)
                                 {
@@ -79,37 +81,39 @@
                             }
                         </select>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="">Cidade</label>
+                    <div class="card-content-area form-group col-md-6">
+                        <label class="titulo-form" for="">Cidade</label>
                         <input asp-for="CidadeRegistro" type="text" class="form-control" id="" placeholder="">
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="">CEP</label>
+                    <div class="card-content-area form-group col-md-3">
+                        <label class="titulo-form" for="">CEP</label>
                         <input asp-for="CEPRegistro" type="text" class="form-control" id="" placeholder="">
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="">Bairro</label>
+                    <div class="card-content-area form-group col-md-3">
+                        <label class="titulo-form" for="">Bairro</label>
                         <input asp-for="BairroRegistro" type="text" class="form-control" id="">
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="">Endereço</label>
+                    <div class="card-content-area form-group col-md-3">
+                        <label class="titulo-form" for="">Endereço</label>
                         <input asp-for="EnderecoRegistro" type="text" class="form-control" id="">
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="">Número</label>
+                    <div class="card-content-area form-group col-md-3">
+                        <label class="titulo-form" for="">Número</label>
                         <input asp-for="NumeroRegistro" type="text" class="form-control" id="">
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="">Ponto Referencia</label>
+                    <div class="card-content-area form-group col-md-3">
+                        <label class="titulo-form" for="">Ponto Referencia</label>
                         <input asp-for="PontoRefRegistro" type="text" class="form-control" id="">
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="">DescricaoRegistro</label>
+                    <div class="card-content-area form-group col-md-3">
+                        <label class="titulo-form" for="">DescricaoRegistro</label>
                         <textarea asp-for="DescricaoRegistro" type="text" class="form-control" id=""></textarea>
                     </div>
 
                 </div>
-                <button type="submit" class="btn btn-primary">Atualizar</button>
+                <div class="card-btn">
+                    <button type="submit" class="btn btn-primary">Atualizar</button>
+                </div>
             </form>
         </div>
     </div>
