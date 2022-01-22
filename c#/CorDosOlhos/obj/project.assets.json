@@ -5798,24 +5798,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Larissa\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Luan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Larissa\\Documents\\cor dos olhos\\cor-dos-olhos\\c#\\CorDosOlhos\\CorDosOlhos.csproj",
+      "projectUniqueName": "C:\\Users\\Luan\\Documents\\cor-dos-olhos\\c#\\CorDosOlhos\\CorDosOlhos.csproj",
       "projectName": "CorDosOlhos",
-      "projectPath": "C:\\Users\\Larissa\\Documents\\cor dos olhos\\cor-dos-olhos\\c#\\CorDosOlhos\\CorDosOlhos.csproj",
-      "packagesPath": "C:\\Users\\Larissa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Larissa\\Documents\\cor dos olhos\\cor-dos-olhos\\c#\\CorDosOlhos\\obj\\",
+      "projectPath": "C:\\Users\\Luan\\Documents\\cor-dos-olhos\\c#\\CorDosOlhos\\CorDosOlhos.csproj",
+      "packagesPath": "C:\\Users\\Luan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Luan\\Documents\\cor-dos-olhos\\c#\\CorDosOlhos\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Larissa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Luan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5823,7 +5818,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
       },
       "frameworks": {
         "net5.0": {
@@ -5872,6 +5867,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.13, 5.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5880,7 +5893,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
