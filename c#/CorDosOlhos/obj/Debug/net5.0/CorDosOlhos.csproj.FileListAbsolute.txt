@@ -77,6 +77,3 @@ C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Registro\Index.cshtml.g.cs
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Home\Sobre.cshtml.g.cs
 C:\Users\Larissa\Documents\cor dos olhos\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\Razor\Views\Home\Graficos.cshtml.g.cs
-C:\Users\Luan\Documents\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\CorDosOlhos.dll
-C:\Users\Luan\Documents\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\ref\CorDosOlhos.dll
-C:\Users\Luan\Documents\cor-dos-olhos\c#\CorDosOlhos\obj\Debug\net5.0\CorDosOlhos.pdb
