@@ -27,7 +27,7 @@ namespace CorDosOlhos.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("BairroC")
-                        .HasColumnType("char(25)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("CEPC")
                         .HasColumnType("char(8)");
@@ -37,13 +37,13 @@ namespace CorDosOlhos.Migrations
                         .HasColumnType("char(11)");
 
                     b.Property<string>("CidadeC")
-                        .HasColumnType("char(25)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("EmailC")
-                        .HasColumnType("char(30)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("EnderecoC")
-                        .HasColumnType("char(25)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("Etnia")
                         .IsRequired()
@@ -69,7 +69,7 @@ namespace CorDosOlhos.Migrations
 
                     b.Property<string>("SobrenomeC")
                         .IsRequired()
-                        .HasColumnType("char(20)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("TelefoneC")
                         .IsRequired()
@@ -92,10 +92,10 @@ namespace CorDosOlhos.Migrations
 
                     b.Property<string>("EmailContato")
                         .IsRequired()
-                        .HasColumnType("char(20)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("MsgContato")
-                        .HasColumnType("char(25)");
+                        .HasColumnType("varchar(MAX)");
 
                     b.Property<string>("NomeContato")
                         .IsRequired()
@@ -115,7 +115,7 @@ namespace CorDosOlhos.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("BairroRegistro")
-                        .HasColumnType("char(25)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("CEPRegistro")
                         .HasColumnType("char(8)");
@@ -126,17 +126,17 @@ namespace CorDosOlhos.Migrations
                         .HasColumnType("nvarchar(40)");
 
                     b.Property<string>("DescricaoRegistro")
-                        .HasColumnType("char(150)");
+                        .HasColumnType("varchar(MAX)");
 
                     b.Property<string>("EnderecoRegistro")
                         .IsRequired()
-                        .HasColumnType("char(25)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("NumeroRegistro")
                         .HasColumnType("char(7)");
 
                     b.Property<string>("PontoRefRegistro")
-                        .HasColumnType("char(25)");
+                        .HasColumnType("varchar(50)");
 
                     b.HasKey("IdRegistro");
 
