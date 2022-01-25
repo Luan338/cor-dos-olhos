@@ -4,77 +4,78 @@
     ViewData["Title"] = "Registro";
     var Registros = ViewData["Registros"] as List<Registro>;
 }
-<div class="card-content">
-    <!--futuramente introduzir a forma de pesquisa pelo usuarios atraves da digitação do mesmo //-->
-    <br />
-    <br />
-    <h1>Verifique a região que deseja saber mais informações</h1>
-
-
-    <br />
-    <br />
-
-    <div class="card-content-area">
-        <label class="titulo-form" for"">Digite o endereço: </label>
-        <input class="form-control" id="">
-    </div>
-
-    <div class="card-btn">
-        <button type="submit" class="btn btn-outline-dark">Procurar</button>
-    </div>
-</div>
 
          <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <br />
-                    <br />
-                    <h2 style="color: #341940 ">Registros</h2>
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
+             <div class="row">
 
-                                    <th>CidadeRegistro</th>
-                                    <th>CEPRegistro</th>
-                                    <th>BairroRegistro </th>
-                                    <th>EnderecoRegistro </th>
-                                    <th>NumeroRegistro </th>
-                                    <th>PontoRefRegistro </th>
-                                    <th>DescricaoRegistro</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @{
-                                    foreach (var registro in Registros)
-                                    {
-                                        <tr>
-
-                                            <td>@registro.CidadeRegistro</td>
-                                            <td>@registro.CEPRegistro</td>
-                                            <td>@registro.BairroRegistro</td>
-                                            <td>@registro.EnderecoRegistro</td>
-                                            <td>@registro.NumeroRegistro</td>
-                                            <td>@registro.PontoRefRegistro</td>
-                                            <td>@registro.DescricaoRegistro</td>
+                 <div class="card-content">
+                     <!--futuramente introduzir a forma de pesquisa pelo usuarios atraves da digitação do mesmo //-->
+                     <br />
+                     <br />
+                     <h1>Verifique a região que deseja saber mais informações</h1>
 
 
-                                        </tr>
-                                    }
-                                }
-                            </tbody>
-                        </table>
-                    </div>
+                     <br />
+                     <br />
+
+                     <div class="card-content-area">
+                         <label class="titulo-form" for"">Digite o endereço: </label>
+                         <input class="form-control" id="">
+                     </div>
+
+                     <div class="card-btn">
+                         <button type="submit" class="btn btn-outline-dark">Procurar</button>
+                     </div>
+                 </div>
+                 <div class="col-md-10">
+                     <br />
+                     <br />
+                     <h2 style="color: #341940 ">Registros</h2>
+                     <div class="table-responsive">
+                         <table class="table table-striped">
+                             <thead>
+                                 <tr>
+
+                                     <th>CidadeRegistro</th>
+                                     <th>CEPRegistro</th>
+                                     <th>BairroRegistro </th>
+                                     <th>EnderecoRegistro </th>
+                                     <th>NumeroRegistro </th>
+                                     <th>PontoRefRegistro </th>
+                                     <th>DescricaoRegistro</th>
+                                 </tr>
+                             </thead>
+                             <tbody>
+                                 @{
+                                     foreach (var registro in Registros)
+                                     {
+                                         <tr>
+
+                                             <td>@registro.CidadeRegistro</td>
+                                             <td>@registro.CEPRegistro</td>
+                                             <td>@registro.BairroRegistro</td>
+                                             <td>@registro.EnderecoRegistro</td>
+                                             <td>@registro.NumeroRegistro</td>
+                                             <td>@registro.PontoRefRegistro</td>
+                                             <td>@registro.DescricaoRegistro</td>
+
+
+                                         </tr>
+                                     }
+                                 }
+                             </tbody>
+                         </table>
+                     </div>
 
 
 
 
-                    <br />
+                     <br />
 
-                    <br />
+                     <br />
 
 
-                </div>
-            </div>
+                 </div>
+             </div>
         </div>
 
